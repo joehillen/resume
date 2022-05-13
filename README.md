@@ -1,4 +1,4 @@
-    # Resume - Joe Hillenbrand
+# Resume - Joe Hillenbrand
 
 *PDF version available [here](https://joe.h9d.org/resume/joehillen-resume.pdf)*
 
