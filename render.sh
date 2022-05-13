@@ -180,6 +180,6 @@ if [[ index.html -nt joehillen-resume.pdf ]]; then
 fi
 
 if [[ $INSTALL ]]; then
-    cp -r css/ index.html joehillen-resume.pdf /var/www/resume/
+    cp -r css/ index.html joehillen-resume.pdf README.html README.md /var/www/resume/
 fi
 
