@@ -168,6 +168,7 @@ if [[ render.sh -nt README.md || README.tmpl.md -nt README.md || data.yaml -nt R
 EOF'
 
     check README.md
+    pandoc -o README.html README.md
 fi
 
 # PDF
