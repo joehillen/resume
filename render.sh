@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+# This repo uses Bash as a template language to fill in the data index.html and README.md.
+# index.html is then used to generate the PDF version.
+
 function loop() {
   while read -r line; do
     "$@" "$line"
