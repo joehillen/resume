@@ -3,6 +3,10 @@
 # This repo uses Bash as a template language to fill in the data index.html and README.md.
 # index.html is then used to generate the PDF version.
 
+if [[ $1 = install ]]; then
+    INSTALL=true
+fi
+
 function loop() {
   while read -r line; do
     "$@" "$line"
@@ -167,3 +171,8 @@ echo "++ rendering joehillen-resume.pdf"
 
 MARGIN=50px
 QT_QPA_PLATFORM=offscreen wkhtmltopdf --allow . --title "Resume - Joe Hillenbrand" -T $MARGIN -R $MARGIN -B $MARGIN -L $MARGIN index.html joehillen-resume.pdf
+
+if [[ $INSTALL ]]; then
+    cp -r css/ index.html joehillen-resume.pdf /var/www/resume/
+fi
+
