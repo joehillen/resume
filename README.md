@@ -183,7 +183,7 @@ Graduated: Dec 2008
 
 ## Links
 
-- <https://joehillen.org/resume/>
+- <https://joe.h9d.org/resume/>
 - <https://github.com/joehillen/>
 - <https://www.linkedin.com/in/joehillen/>
 - <https://keybase.io/joehillen/>

@@ -119,14 +119,16 @@ function check() {
 
 # HTML
 
-echo "++ rendering index.html"
-eval 'cat <<EOF >index.html
-'"$(<index.tmpl.html)"'
+if [[ index.tmpl.html -nt index.html || data.yaml -nt index.html ]]; then
+    echo "++ rendering index.html"
+    eval 'cat <<EOF >index.html
+    '"$(<index.tmpl.html)"'
 EOF'
 
-check index.html
+    check index.html
 
-prettier --write index.html
+    prettier --write index.html
+fi
 
 # Markdown
 
@@ -158,19 +160,23 @@ $(job start) - $(job end)$(
 EOL
 }
 
-echo "++ rendering README.md"
-eval 'cat <<EOF >README.md
-'"$(<README.tmpl.md)"'
+if [[ README.tmpl.md -nt README.md || data.yaml -nt README.md ]]; then
+
+    echo "++ rendering README.md"
+    eval 'cat <<EOF >README.md
+    '"$(<README.tmpl.md)"'
 EOF'
 
-check README.md
+    check README.md
+fi
 
 # PDF
 
-echo "++ rendering joehillen-resume.pdf"
-
-MARGIN=50px
-QT_QPA_PLATFORM=offscreen wkhtmltopdf --allow . --title "Resume - Joe Hillenbrand" -T $MARGIN -R $MARGIN -B $MARGIN -L $MARGIN index.html joehillen-resume.pdf
+if [[ index.html -nt joehillen-resume.pdf ]]; then
+    echo "++ rendering joehillen-resume.pdf"
+    MARGIN=50px
+    QT_QPA_PLATFORM=offscreen wkhtmltopdf --allow . --title "Resume - Joe Hillenbrand" -T $MARGIN -R $MARGIN -B $MARGIN -L $MARGIN index.html joehillen-resume.pdf
+fi
 
 if [[ $INSTALL ]]; then
     cp -r css/ index.html joehillen-resume.pdf /var/www/resume/

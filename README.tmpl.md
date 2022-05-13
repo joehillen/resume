@@ -22,6 +22,7 @@ Graduated: $(edu graduated)
 
 ## Links
 
+- <$(get links.Resume)joehillen-resume.pdf>
 - <$(get links.Resume)>
 - <$(get links.GitHub)>
 - <$(get links.LinkedIn)>
