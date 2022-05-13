@@ -1,5 +1,7 @@
 # Resume - $(get name)
 
+*PDF version available [here]($(get links.Resume)joehillen-resume.pdf)*
+
 $(get email)  
 $(get location)
 
@@ -22,7 +24,6 @@ Graduated: $(edu graduated)
 
 ## Links
 
-- <$(get links.Resume)joehillen-resume.pdf>
 - <$(get links.Resume)>
 - <$(get links.GitHub)>
 - <$(get links.LinkedIn)>

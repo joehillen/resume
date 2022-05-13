@@ -11,6 +11,7 @@
   <body>
     <header>
       <h1>$(get name)</h1>
+      <a id="pdf" href="$(get links.Resume)joehillen-resume.pdf">PDF</a>
     </header>
     <main>
       <section id="info">
@@ -33,7 +34,6 @@ LINK
                 link LinkedIn
                 link Keybase
               )
-              <li><a href="$(get links.Resume)joehillen-resume.pdf">PDF version</a></li>
             </ul>
           </div>
       </section>
@@ -63,7 +63,7 @@ LINK
       </section>
       <section id="links" class="print">
         <ul>
-          <li>PDF version: $(get "links.Resume")joehillen-resume.pdf</li>
+          <li>$(get "links.Resume")joehillen-resume.pdf</li>
           $(get 'links | keys[]' | while read -r link; do
             echo "<li>$(get "links.$link")</li>"
           done)

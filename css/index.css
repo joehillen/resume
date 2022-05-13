@@ -6,9 +6,16 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header h1 {
   text-transform: capitalize;
   font-variant: small-caps;
 }
+
 
 section {
   border-top: 1px solid #ccc;
@@ -41,7 +48,7 @@ section {
   margin-left: 4%;
 }
 
-.description>ul {
+.description ul {
   padding-left: 2%;
 }
 
@@ -51,7 +58,7 @@ section {
 }
 
 
-.clients>.job {
+.clients .job {
   padding-left: 2%;
   border-left: 2px solid #ddd;
 }
