@@ -24,7 +24,6 @@
                   cat <<LINK
                     <li>
                       <a class="noprint link" href="$(get links.$1)">$1</a>
-                      <span class="print">$(get "links.$1")</span>
                     </li>
 LINK
                 }
@@ -34,7 +33,7 @@ LINK
                 link LinkedIn
                 link Keybase
               )
-              <li><a href="$(link Resume)joehillen-resume.pdf">PDF version</a></li>
+              <li><a href="$(get links.Resume)joehillen-resume.pdf">PDF version</a></li>
             </ul>
           </div>
       </section>

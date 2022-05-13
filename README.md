@@ -1,4 +1,4 @@
-# Resume - Joe Hillenbrand
+    # Resume - Joe Hillenbrand
 
 joehillen@gmail.com  
 San Marcos, CA
@@ -183,6 +183,7 @@ Graduated: Dec 2008
 
 ## Links
 
+- <https://joe.h9d.org/resume/joehillen-resume.pdf>
 - <https://joe.h9d.org/resume/>
 - <https://github.com/joehillen/>
 - <https://www.linkedin.com/in/joehillen/>
