@@ -1,0 +1,87 @@
+body {
+  max-width: 767px;
+  margin: 50px auto;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+}
+
+header {
+  text-transform: capitalize;
+  font-variant: small-caps;
+}
+
+section {
+  border-top: 1px solid #ccc;
+  padding: 4%;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+#about {
+  border: none;
+  padding-top: 0;
+}
+
+#info img {
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+}
+
+.jobtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  margin-left: 4%;
+}
+
+.description>ul {
+  padding-left: 2%;
+}
+
+.clients {
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+
+.clients>.job {
+  padding-left: 2%;
+  border-left: 2px solid #ddd;
+}
+
+.print {
+  display: none;
+}
+
+@media print {
+  body {
+    font-family: 'DejaVu Serif';
+    zoom: 85%;
+  }
+
+  .print {
+    display: block !important;
+  }
+
+  .noprint {
+    display: none !important;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-color: black;
+  }
+
+  .nobreak, #education {
+    page-break-inside: avoid;
+  }
+}

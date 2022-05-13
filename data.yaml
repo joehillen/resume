@@ -1,0 +1,245 @@
+---
+name: Joe Hillenbrand
+location: San Marcos, CA
+email: joehillen@gmail.com
+links:
+  Homepage: https://joehillen.org/
+  Resume: https://joehillen.org/resume/
+  GitHub: https://github.com/joehillen/
+  Keybase: https://keybase.io/joehillen/
+  LinkedIn: https://www.linkedin.com/in/joehillen/
+
+about: >-
+  13+ years of experience working at all levels of the software stack, including
+  front-end, back-end, microservices, testing, database, cloud, infrastructure
+  as code, and CI/CD. I'm passionate about building reliable, type-safe,
+  fault-tolerant, distributed systems without over-engineering. I often
+  specialize in DevOps but approach it like a software engineer.
+
+  My atypical background gives me a unique, holistic perspective. I'm a strong
+  leader that loves mentoring, training, and collaborating with cross-functional
+  teams, users, customers, and business leaders.
+
+  My current favorite tools are Rust, Typescript, Deno, React, GraqhQL, Pulumi,
+  Kubernetes, GitLab, Linux, and Git.
+
+  I plan to work from home for the foreseeable future; however, I do not mind
+  visiting an office near the San Diego area periodically.
+
+history:
+  - company:
+      name: Seaplane IO
+      url: https://seaplane.io
+      location: Remote
+    title: Software Engineer
+    start: Nov 2021
+    end: Feb 2022
+    accomplishments:
+      - Rust development.
+      - Infrastructure management for AWS and GCP using Ansible, Python, and
+        Pulumi.
+      - CI/CD on GitHub.
+      - Design documentation for authentication system using Auth0.
+
+  - company:
+      name: Slalom Consulting
+      url: https://www.slalom.com
+      location: Seattle, WA
+    title: Senior Consultant
+    start: Oct 2019
+    end: Nov 2021
+    clients:
+      - company:
+          name: Adaptive Biotech
+          url: https://www.adaptivebiotech.com/
+          location: Seattle, WA (Remote)
+        title: DevOps Consultant
+        start: July 2021
+        end: Nov 2021
+        accomplishments:
+          - Implemented the MVP phase of my previous DevOps proposal.
+          - Created GitLab infrastructure.
+          - Built the CI/CD pipeline and DevOps automation on GitLabCI.
+
+      - company:
+          name: Pokemon
+          url: https://pokemoncenter.com
+          location: Bellevue, WA (Remote)
+        title: DevOps/Cloud Architect
+        start: Jan 2021
+        end: July 2021
+        accomplishments:
+          - Deployed pokemoncenter.com to an additional AWS region with AWS CDK
+            in Typescript.
+          - Improved and expanded existing CodeBuild/CodePipeline CI/CD.
+          - Created a proposal for a major overhaul of the DevOps processes and
+            migrate CI/CD to GitLab.
+          - Began an initiative to migrate from AWS Lambda to Kubernetes.
+
+      - company:
+          name: Adaptive Biotech
+          url: https://www.adaptivebiotech.com/
+          location: Seattle, WA (Remote)
+        title: DevOps Consultant
+        start: Nov 2020
+        end: Jan 2021
+        accomplishments:
+          - Conducted a DevOps Maturity Assessment in a heavily regulated
+            life-sciences and in-vitro diagnostics software development practice.
+          - Conducted interviews and surveys to evaluate the existing SDLC.
+          - Proposed a strategy to transform from Waterfall SDLC methodology
+            to a Lean, Agile, DevOps process while maintaining healthcare
+            regulatory compliance.
+
+      - company:
+          name: SEIU Benefits Group
+          url: https://www.myseiubenefits.org/
+          location: Seattle, WA (Remote)
+        title: Cloud Architect
+        start: June 2020
+        end: Nov 2020
+        accomplishments:
+          - Redesigned and rebuild the AWS architecture with Pulumi and the
+            Serverless framework.
+          - Full-stack development for a bespoke in-house e-learning platform.
+          - Converted the entire large existing React project from Javascript to
+            Typescript along with a major refactor.
+          - Mentored junior engineers.
+
+      - company:
+          name: Pokemon
+          url: https://pokemoncenter.com
+          location: Bellevue, WA
+        title: DevOps/Cloud Architect
+        start: Oct 2019
+        end: June 2020
+        accomplishments:
+          - Built and maintained AWS services for a brand new eCommerce
+            platform, pokemoncenter.com.
+          - Managed AWS Infrastructure with AWS CDK (CloudFront, Lambda@Edge,
+            WAF, SES).
+          - Backend development using Node.JS running on AWS Lambda.
+          - Front-end web development with Typescript, React, Redux, and
+            Next.js.
+          - Manage CI/CD infrastructure using Docker, BitBucket Pipelines,
+            CodeBuild, CodePipeline, and CloudFormation.
+
+  - company:
+      name: Purposeful
+      url: https://www.purposeful.com
+      location: Bellevue, WA
+    title: Senior Engineer
+    start: Dec 2018
+    end: Oct 2019
+    description: Sunlight Payments pivoted and rebranded to become Purposeful.
+    accomplishments:
+      - Full-Stack Web Development in TypeScript using React, styled-components,
+        Next.js, Express, GraphQL, PostGraphile, PostgreSQL, and IaC with AWS
+        CDK.
+      - Built end-to-end type-safety, from UI to database, with GraphQL,
+        Postgraphile, and graphql-code-generator.
+      - Designed and built user authentication and account management via Auth0.
+      - Added product search via Algolia.
+      - Introduced database-level business logic and testing in SQL Stored Procedures.
+      - Wrote a Chrome/Puppeteer-based crawler for CI.
+
+  - company:
+      name: Sunlight Payments
+      url: https://www.sunlightpayments.com
+      location: Seattle, WA (Remote)
+    title: Senior Engineer
+    start: Dec 2017
+    end: Sept 2018
+    accomplishments:
+      - Rebuilt the CI/CD pipeline with AWS CodePipeline and Elastic Container
+        Service (ECS) across isolated AWS accounts. All changes merged to master
+        were automatically tested and deployed to production without user
+        interaction in under 30 minutes.
+      - Replaced the NixOS-based developer environment with Docker.
+
+  - company:
+      name: Elastic
+      url: https://www.elastic.co
+      location: Remote
+    title: Infrastructure Developer
+    start: Sept 2014
+    end: Nov 2017
+    description:
+      The role of the infrastructure team at Elastic provides developers with
+      infrastructure solutions and tested the company's products by using them.
+    accomplishments:
+      - Primary software developer for the Infrastructure Team.
+      - Developed a configuration management library in Haskell, named Craft, as
+        a more versatile and type-safe alternative to Puppet and Ansible.
+      - Built, with Haskell/Craft, a large-scale automated test suite to deploy
+        and test Elasticsearch in 100 to 1000 node cluster configurations on AWS
+        and GCP.
+      - Developed, using Haskell/Craft and oauth2_proxy, a highly available
+        proxy service to allow employees to give Google SSO access to
+        their internal Elasticsearch clusters without installing anything,
+        having any special access, knowing any secrets or asking the
+        infrastructure team for help. It has a management portal and would
+        automatically create custom domain names and TLS certificates.
+      - Deployed the Vault secrets management service in a highly available
+        configuration.
+      - Wrote a custom wildcard DNS service (ip.es.io) in Haskell as a highly
+        available alternative to xip.io or nip.io. The existing solutions were
+        not reliable enough.
+      - Built AWS Lambda functions to monitor the company's internal AWS usage
+        and billable activity.
+      - Various other development in Python, Bash, Clojure, and Go.
+
+  - company:
+      name: Flowroute
+      url: https://www.flowroute.com
+      location: Seattle, WA
+    title: Backend Software Engineer
+    start: Dec 2013
+    end: Sept 2014
+    accomplishments:
+      - Built an asynchronous JSON-RPC client in C to be embedded in the
+        synchronous SIP server Kamailio.
+      - Built microservices using Twisted Python.
+      - Designed and implemented a distributed, high-throughput, reliable call
+        detail record (CDR) database system with idempotent, real-time account
+        balance tracking using NSQ, Couchbase, Riak, and Twisted Python.
+      - Implemented the SMPP binary protocol (SMS/MMS) in Python.
+      - Django development for the website.
+      - Successfully advocated development best practices to the team,
+        such as linting and code review.
+      - Built a prototype for a new SIP protocol and server in Haskell from
+        scratch.
+
+  - company:
+      name: Wetpaint
+      url: https://wetpaint-inc.com
+      location: Seattle, WA
+    title: DevOps Engineer
+    start: Jan 2011
+    end: Dec 2013
+    accomplishments:
+      - DevOps infrastructure management with Puppet.
+      - Transition everything from SVN to Git.
+      - Centralized all server logging using syslog-ng.
+      - Frontend web development in HTML/ERB, CSS, JS/jQuery
+      - Designed and built a high-performance, distributed web analytics
+        prototype using Couchbase and a modified Nginx server in C.
+
+  - company:
+      name: General Electric
+      location: Cincinnati, OH
+    title: Systems Administrator
+    start: Mar 2009
+    end: Nov 2010
+    accomplishments:
+      - Deployed and managed physical FreeBSB servers using Puppet.
+      - Replaced CVS with Git.
+      - Automated deployments using Python and Bash.
+      - Wrote a custom Splunk plugin to pull data from MS SQL Server.
+      - Managed Nagios, BIND DNS, Apache, MySQL, WikiMedia, Wordpress, and Splunk.
+
+education:
+  degree: Bachelor of Science in Electrical Engineering
+  focus: Embedded Computing Systems
+  school: University of Washington
+  graduated: Dec 2008
