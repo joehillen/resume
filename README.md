@@ -5,48 +5,49 @@
 joehillen@gmail.com  
 San Marcos, CA
 
-13+ years of experience working at all levels of the software stack,  
+I have 13+ years of experience working at all levels of the software stack,  
 including front-end, back-end, microservices, testing, database, cloud,  
 infrastructure as code, and CI/CD. I'm passionate about building reliable,  
 type-safe, fault-tolerant, distributed systems without over-engineering. I  
 often specialize in DevOps but approach it like a software engineer.  
   
-My atypical background gives me a unique, holistic perspective. I'm a strong  
-leader that loves mentoring, training, and collaborating with  
-cross-functional teams, users, customers, and business leaders.  
+My background in DevOps and full stack development makes me a highly  
+desirable candidate for Staff Engineer roles. My roles have primarily focused  
+on DevOps, and I've always worked across teams and with all parts of the  
+software stack, giving me a unique, holistic perspective. I love mentoring,  
+training, and collaborating with cross-functional teams, users, customers,  
+and business leaders. I'm motivated by improving team efficiency, polishing  
+rough edges, and fixing issues that are often ignored.  
   
 My current favorite tools are Rust, Typescript, Deno, React, GraqhQL, Pulumi,  
 Kubernetes, GitLab, Linux, and Git.  
   
-I plan to work from home for the foreseeable future; however, I do not mind  
-visiting an office near the San Diego area periodically.  
-  
 ## History
 
-### Software Engineer @ Seaplane IO
+### Lead DevOps Engineer @ Siemens (Apr 2022 - Present)
 
-Nov 2021 - Feb 2022
+- Infrastructure management for AWS using CDK and Pulumi in Typescript.  
+- AWS Lambda Function in Typescript and NodeJS.  
+- Angular Front End Development  
+- GitLab CI/CD  
+- Introduced a new continuous release process.  
+
+### Software Engineer @ Seaplane IO (Nov 2021 - Feb 2022)
 
 - Rust development.  
 - Infrastructure management for AWS and GCP using Ansible, Python, and Pulumi.  
 - CI/CD on GitHub.  
 - Design documentation for authentication system using Auth0.  
 
-### Senior Consultant @ Slalom Consulting
+### Senior Consultant @ Slalom Consulting (Oct 2019 - Nov 2021)
 
-Oct 2019 - Nov 2021
-
-#### DevOps Consultant @ Adaptive Biotech
-
-July 2021 - Nov 2021
+#### Solution Architect @ Adaptive Biotech (July 2021 - Nov 2021)
 
 - Implemented the MVP phase of my previous DevOps proposal.  
 - Created GitLab infrastructure.  
 - Built the CI/CD pipeline and DevOps automation on GitLabCI.  
 
-#### DevOps/Cloud Architect @ Pokemon
-
-Jan 2021 - July 2021
+#### Lead DevOps/Cloud Architect @ Pokemon (Jan 2021 - July 2021)
 
 - Deployed pokemoncenter.com to an additional AWS region with AWS CDK in  
   Typescript.  
@@ -55,9 +56,7 @@ Jan 2021 - July 2021
   CI/CD to GitLab.  
 - Began an initiative to migrate from AWS Lambda to Kubernetes.  
 
-#### DevOps Consultant @ Adaptive Biotech
-
-Nov 2020 - Jan 2021
+#### Solution Architect @ Adaptive Biotech (Nov 2020 - Jan 2021)
 
 - Conducted a DevOps Maturity Assessment in a heavily regulated life-sciences  
   and in-vitro diagnostics software development practice.  
@@ -65,9 +64,7 @@ Nov 2020 - Jan 2021
 - Proposed a strategy to transform from Waterfall SDLC methodology to a Lean,  
   Agile, DevOps process while maintaining healthcare regulatory compliance.  
 
-#### Cloud Architect @ SEIU Benefits Group
-
-June 2020 - Nov 2020
+#### Cloud Architect @ SEIU Benefits Group (June 2020 - Nov 2020)
 
 - Redesigned and rebuild the AWS architecture with Pulumi and the Serverless  
   framework.  
@@ -76,9 +73,7 @@ June 2020 - Nov 2020
   Typescript along with a major refactor.  
 - Mentored junior engineers.  
 
-#### DevOps/Cloud Architect @ Pokemon
-
-Oct 2019 - June 2020
+#### Lead DevOps/Cloud Architect @ Pokemon (Oct 2019 - June 2020)
 
 - Built and maintained AWS services for a brand new eCommerce platform,  
   pokemoncenter.com.  
@@ -88,9 +83,7 @@ Oct 2019 - June 2020
 - Manage CI/CD infrastructure using Docker, BitBucket Pipelines, CodeBuild,  
   CodePipeline, and CloudFormation.  
 
-### Senior Engineer @ Purposeful
-
-Dec 2018 - Oct 2019
+### Senior Engineer @ Purposeful (Dec 2018 - Oct 2019)
 
 Sunlight Payments pivoted and rebranded to become Purposeful.
 
@@ -104,9 +97,7 @@ Sunlight Payments pivoted and rebranded to become Purposeful.
   Procedures.  
 - Wrote a Chrome/Puppeteer-based crawler for CI.  
 
-### Senior Engineer @ Sunlight Payments
-
-Dec 2017 - Sept 2018
+### Senior Engineer @ Sunlight Payments (Dec 2017 - Sept 2018)
 
 - Rebuilt the CI/CD pipeline with AWS CodePipeline and Elastic Container  
   Service (ECS) across isolated AWS accounts. All changes merged to master were  
@@ -114,11 +105,10 @@ Dec 2017 - Sept 2018
   under 30 minutes.  
 - Replaced the NixOS-based developer environment with Docker.  
 
-### Infrastructure Developer @ Elastic
+### Infrastructure Developer @ Elastic (Sept 2014 - Nov 2017)
 
-Sept 2014 - Nov 2017
-
-The role of the infrastructure team at Elastic provides developers with infrastructure solutions and tested the company's products by using them.
+The role of the infrastructure team at Elastic provides developers with  
+infrastructure solutions and tested the company's products by using them.
 
 - Primary software developer for the Infrastructure Team.  
 - Developed a configuration management library in Haskell, named Craft, as a  
@@ -140,9 +130,7 @@ The role of the infrastructure team at Elastic provides developers with infrastr
   billable activity.  
 - Various other development in Python, Bash, Clojure, and Go.  
 
-### Backend Software Engineer @ Flowroute
-
-Dec 2013 - Sept 2014
+### Backend Software Engineer @ Flowroute (Dec 2013 - Sept 2014)
 
 - Built an asynchronous JSON-RPC client in C to be embedded in the  
   synchronous SIP server Kamailio.  
@@ -156,9 +144,7 @@ Dec 2013 - Sept 2014
   linting and code review.  
 - Built a prototype for a new SIP protocol and server in Haskell from scratch.  
 
-### DevOps Engineer @ Wetpaint
-
-Jan 2011 - Dec 2013
+### DevOps Engineer @ Wetpaint (Jan 2011 - Dec 2013)
 
 - DevOps infrastructure management with Puppet.  
 - Transition everything from SVN to Git.  
@@ -167,15 +153,11 @@ Jan 2011 - Dec 2013
 - Designed and built a high-performance, distributed web analytics prototype  
   using Couchbase and a modified Nginx server in C.  
 
-### Systems Administrator @ General Electric
+### Systems Administrator @ General Electric (Mar 2009 - Nov 2010)
 
-Mar 2009 - Nov 2010
-
-- Deployed and managed physical FreeBSB servers using Puppet.  
+- Deployed and managed physical FreeBSD servers using Puppet.  
 - Replaced CVS with Git.  
 - Automated deployments using Python and Bash.  
-- Wrote a custom Splunk plugin to pull data from MS SQL Server.  
-- Managed Nagios, BIND DNS, Apache, MySQL, WikiMedia, Wordpress, and Splunk.  
 
 ## Education
 

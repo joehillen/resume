@@ -1,3 +1,34 @@
+#!/bin/bash -e
+
+source include.sh
+
+function job_md() {
+  local path="$1"
+
+  function job() {
+    get "$path.$*"
+  }
+
+  cat <<EOL
+### $(job title) @ $(job company.name) ($(job start) - $(job end))$(
+    [[ $(job 'description') ]] && {
+      echo
+      echo
+      job description
+    }
+    [[ $(job 'accomplishments | length') -gt 0 ]] && {
+      [[ $(job 'description') ]] || echo
+      echo
+    }
+    job 'accomplishments[]' | while read -r line; do
+      echo "- $line" | fold -w 78 -s | trim | sed 's/$/  /;2,$s/^/  /'
+    done
+  )
+
+EOL
+}
+
+cat <<EOF >README.md
 # Resume - $(get name)
 
 *PDF version available [here]($(get links.Resume)joehillen-resume.pdf)*
@@ -28,3 +59,7 @@ Graduated: $(edu graduated)
 - <$(get links.GitHub)>
 - <$(get links.LinkedIn)>
 - <$(get links.Keybase)>
+EOF
+
+check README.md
+pandoc -o README.html README.md
