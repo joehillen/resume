@@ -50,30 +50,25 @@ cat <<EOF >index.html
   <body>
     <header>
       <h1>$(get name)</h1>
-      <a id="pdf" href="$(get links.Resume)joehillen-resume.pdf">PDF</a>
+      <a id="pdf" class="noprint" href="joehillen-resume.pdf">PDF</a>
     </header>
     <main>
       <section id="info">
-          <img src="https://joe.h9d.org/me.jpg" alt="$(get name)" />
           <div id="contact">
-            <a href="mailto:$(get email)">$(get email)</a><br>
-            $(get location)<br>
-            <ul class="noprint">
+            <div>
+              <p>
+              <a href="mailto:$(get email)">$(get email)</a><br>
+              $(get location)
+              </p>
+              <ul>
               $(
-  link() {
-    cat <<LINK
-                    <li>
-                      <a class="noprint link" href="$(get links.$1)">$1</a>
-                    </li>
-LINK
-  }
-
-  link Homepage
-  link GitHub
-  link LinkedIn
-  link Keybase
+  yq -crM ".links | .[]" data.yaml | while read -r link; do
+    url=$(echo "$link" | jq -r .url)
+    echo "<li><span class=\"noprint\"><a href=\"$url\">$(echo "$link" | jq -r .name)</a></span><span class=\"print\">$url</span></li>"
+  done
 )
-            </ul>
+              </ul>
+            </div>
           </div>
       </section>
       <section id="about">
@@ -100,20 +95,12 @@ done)
         <br>
         $(get education.graduated)
       </section>
-      <section id="links" class="print">
-        <ul>
-          <li>$(get "links.Resume")joehillen-resume.pdf</li>
-          $(get 'links | keys[]' | while read -r link; do
-  echo "<li>$(get "links.$link")</li>"
-done)
-        </ul>
-      </section>
     </main>
-  </body>
+    <footer>
+      <p id="date">Updated: $(date -I)</p>
+    </footer>
 
-  <footer>
-    <p id="date">$(date -I)</p>
-  </footer>
+  </body>
 
 </html>
 EOF

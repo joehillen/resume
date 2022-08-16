@@ -2,6 +2,11 @@
 
 source include.sh
 
+function wrap() {
+  sed 's/$/\n/' | fold -w 78 -s | trim | sed '${/^$/d}'
+
+}
+
 function job_md() {
   local path="$1"
 
@@ -14,14 +19,14 @@ function job_md() {
     [[ $(job 'description') ]] && {
       echo
       echo
-      job description
+      job description | wrap | sed 's/^/  /'
     }
     [[ $(job 'accomplishments | length') -gt 0 ]] && {
       [[ $(job 'description') ]] || echo
       echo
     }
     job 'accomplishments[]' | while read -r line; do
-      echo "- $line" | fold -w 78 -s | trim | sed 's/$/  /;2,$s/^/  /'
+      echo -n "- $line" | wrap
     done
   )
 
@@ -30,17 +35,25 @@ EOL
 
 cat <<EOF >README.md
 ---
+title: Resume - $(get name)
 date: $(date -I)
 ---
 
-# Resume - $(get name)
-
-*PDF version available [here]($(get links.Resume)joehillen-resume.pdf)*
+*PDF version available [here]($PDF)*
 
 $(get email)  
 $(get location)
 
-$(get about | sed 's/$/\n/' | fold -w 78 -s | trim | sed 's/$/  /g')
+$(get about | wrap)
+
+## Links
+
+$(
+  yq -crM '.links | .[] | .url' data.yaml | while read -r url; do
+    echo "- <$url>"
+  done
+)
+
 ## History
 
 $(for job in $(get 'history | keys | .[]'); do
@@ -56,13 +69,6 @@ done)
 $(edu degree) ($(edu focus))  
 $(edu school)  
 Graduated: $(edu graduated)  
-
-## Links
-
-- <$(get links.Resume)>
-- <$(get links.GitHub)>
-- <$(get links.LinkedIn)>
-- <$(get links.Keybase)>
 EOF
 
 check README.md

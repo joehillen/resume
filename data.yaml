@@ -3,13 +3,20 @@ name: Joe Hillenbrand
 location: San Marcos, CA
 email: joehillen@gmail.com
 links:
-  Homepage: https://joe.h9d.org
-  Resume: https://joe.h9d.org/resume/
-  GitHub: https://github.com/joehillen/
-  Keybase: https://keybase.io/joehillen/
-  LinkedIn: https://www.linkedin.com/in/joehillen/
+  - name: Homepage
+    url: https://joe.h9d.org
+  - name: Resume
+    url: https://joe.h9d.org/resume/
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/joehillen/
+  - name: Calendly
+    url: https://calendly.com/joehillen/30min
+  - name: GitHub
+    url: https://github.com/joehillen/
+  - name: Keybase
+    url: https://keybase.io/joehillen/
 
-about: >-
+about:
   I have 13+ years of experience working at all levels of the software stack,
   including front-end, back-end, microservices, testing, database, cloud,
   infrastructure as code, and CI/CD. I'm passionate about building reliable,
@@ -178,7 +185,7 @@ history:
     title: Infrastructure Developer
     start: Sept 2014
     end: Nov 2017
-    description: |-
+    description:
       The role of the infrastructure team at Elastic provides developers with  
       infrastructure solutions and tested the company's products by using them.
     accomplishments:

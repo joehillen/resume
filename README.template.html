@@ -5,13 +5,24 @@
     <meta charset="utf-8">
     <meta name="date" content="$date-meta$">
     <title>$title$</title>
+    <style>
+      body {
+        max-width: 900px;
+      }
+
+    </style>
   </head>
 
   <body>
-    $body$
+    <header>
+      <h1>$title$</h1>
+    </header>
+    <main>
+      $body$
+    </main>
+    <footer>
+      <p style="font-size: 0.8em; font-style: italic">Updated: $date$</p>
+    </footer>
   </body>
-  <footer>
-    <p style="font-size: 0.8em; font-style: italic">$date$</p>
-  </footer>
 
 </html>

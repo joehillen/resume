@@ -18,24 +18,31 @@ header h1 {
 
 section {
   border-top: 1px solid #ccc;
-  padding: 4%;
+  padding: 2% 4% 2% 4%;
 }
 
-#info {
-  display: flex;
-  justify-content: space-between;
+#contact {
+  text-align: right;
   padding-bottom: 0;
+  background-image: url("https://joe.h9d.org/me.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#contact p {
+  margin: 0;
+}
+
+#contact ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
 }
 
 #about {
   border: none;
   padding-top: 0;
-}
-
-#info img {
-  width: 120px;
-  height: 120px;
-  border-radius: 6px;
 }
 
 .jobtitle {
@@ -54,11 +61,12 @@ section {
 .clients {
   margin-top: 2%;
   margin-left: 3%;
+  margin-right: 3%;
 }
 
 .clients .job {
-  padding-left: 2%;
-  border-left: 2px solid #ddd;
+  padding-left: 1%;
+  border-left: 2px solid #ccc;
 }
 
 #date {
@@ -77,7 +85,7 @@ section {
   }
 
   .print {
-    display: block !important;
+    display: inline !important;
   }
 
   .noprint {

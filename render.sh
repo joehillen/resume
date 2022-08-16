@@ -27,7 +27,7 @@ fi
 
 # PDF
 
-if [[ $FORCE || index.html -nt joehillen-resume.pdf ]]; then
+if [[ $FORCE || css/index.css -nt joehillen-resume.pdf || index.html -nt joehillen-resume.pdf ]]; then
   echo "++ rendering joehillen-resume.pdf"
   MARGIN=50px
   QT_QPA_PLATFORM=offscreen wkhtmltopdf --allow . --title "Resume - Joe Hillenbrand" -T $MARGIN -R $MARGIN -B $MARGIN -L $MARGIN index.html joehillen-resume.pdf

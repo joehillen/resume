@@ -1,5 +1,10 @@
 #!/bin/bash
 
+RESUME_URL=$(yq -crM '.links | map(select(.name=="Resume")) | .[].url' data.yaml)
+export RESUME_URL
+PDF=${RESUME_URL}joehillen-resume.pdf
+export PDF
+
 function loop() {
   while read -r line; do
     "$@" "$line"
@@ -61,7 +66,7 @@ function trim() {
 }
 
 function get() {
-  yq -r "try .$1 // empty" data.yaml
+  yq -cMr "try .$1 // empty" data.yaml
 }
 
 function edu() {
