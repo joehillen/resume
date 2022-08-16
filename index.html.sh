@@ -111,5 +111,9 @@ done)
     </main>
   </body>
 
+  <footer>
+    <p id="date">$(date -I)</p>
+  </footer>
+
 </html>
 EOF

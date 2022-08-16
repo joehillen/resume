@@ -20,7 +20,7 @@ fi
 
 # Markdown
 
-if [[ $FORCE || include.sh -nt README.md || README.md.sh -nt README.md || data.yaml -nt README.md ]]; then
+if [[ $FORCE || README.template.html -nt README.html || include.sh -nt README.md || README.md.sh -nt README.md || data.yaml -nt README.md ]]; then
   echo "Generating README.md..."
   ./README.md.sh
 fi

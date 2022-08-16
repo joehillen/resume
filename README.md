@@ -1,3 +1,7 @@
+---
+date: 2022-08-16
+---
+
 # Resume - Joe Hillenbrand
 
 *PDF version available [here](https://joe.h9d.org/resume/joehillen-resume.pdf)*

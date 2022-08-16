@@ -29,6 +29,10 @@ EOL
 }
 
 cat <<EOF >README.md
+---
+date: $(date -I)
+---
+
 # Resume - $(get name)
 
 *PDF version available [here]($(get links.Resume)joehillen-resume.pdf)*
@@ -62,4 +66,4 @@ Graduated: $(edu graduated)
 EOF
 
 check README.md
-pandoc -o README.html README.md
+pandoc --standalone --template README.template.html -o README.html README.md
